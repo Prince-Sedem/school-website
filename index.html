@@ -7,32 +7,30 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Animations -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body class="bg-gray-200 text-gray-900">
- <!-- Navigation Bar -->
+    
+<!-- Navigation Bar -->
 <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-        
-        <!-- Logo and School Name -->
         <div class="flex items-center space-x-3">
             <img src="images/school-logo(blue).png" class="w-14" alt="School Logo">
             <h1 class="text-2xl font-bold text-blue-600">Princeton International School</h1>
         </div>
 
-        <button class="block md:hidden text-blue-600" onclick="toggleMenu()">☰</button>
+        <button class="md:hidden text-blue-600" onclick="toggleMenu()">☰</button>
 
         <nav class="hidden md:flex space-x-6" id="mobile-menu">
             <ul class="md:flex space-x-6 items-center">
                 <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
                 <li><a href="gallery.html" class="hover:text-blue-500">Gallery</a></li>
                 <li><a href="about.html" class="hover:text-blue-500">About</a></li>
-                <li><a href="index.html" class="hover:text-blue-500">Contact</a></li>
+                <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
                 <li>
-                    <a href="register.html" 
-                       class="block md:inline-block mt-6 md:mt-0 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-center w-full md:w-auto">
+                    <a href="register.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full md:w-auto text-center block">
                         Register Now
                     </a>
                 </li>
@@ -41,118 +39,109 @@
     </div>
 </header>
 
-    <!-- Hero Section -->
-    <!-- <section id="home" class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('images/pexels-keira-burton-6147072.jpg');">
-        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
-            <h2 class="text-5xl font-extrabold text-white">Shape Your Future With Us</h2>
-            <p class="text-lg text-gray-200 mt-4">Join a community of passionate learners and educators.</p>
-            <a href="#programs" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Explore Programs</a>
-        </div>
-    </section> -->
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center justify-center text-center bg-cover bg-center px-4 sm:px-6" 
+style="background-image: url('images/pexels-keira-burton-6147072.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 sm:p-10 rounded-lg">
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Shape Your Future With Us</h2>
+        <p class="text-lg text-gray-200 mt-4">Join a community of passionate learners and educators.</p>
+        <a href="#programs" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Explore Programs</a>
+    </div>
+</section>
 
-
-    <!-- School Notice -->
-    <section class="py-10">
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-6">
-            <!-- Campus News -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4" data-aos="fade-up">CAMPUS NEWS</h2>
-                <div class="overflow-hidden h-80" data-aos="fade-up">
-                    <marquee scrollamount="5" direction="up" class="h-full">
-                        <ul class="space-y-3 text-gray-700">
-                            <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </marquee>
-                </div>
-            </div>
-            
-            <!-- Events -->
-            <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4">EVENTS</h2>
-                <ul class="space-y-4 text-gray-700">
-                    <li class="flex space-x-4 items-center">
-                        <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="flex space-x-4 items-center">
-                        <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="flex space-x-4 items-center">
-                        <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </li>
+<!-- School Notice -->
+<section class="py-10 px-4 sm:px-6">
+    <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4" data-aos="fade-up">CAMPUS NEWS</h2>
+            <marquee scrollamount="5" direction="up" class="h-40 overflow-hidden">
+                <ul class="space-y-3 text-gray-700" data-aos="fade-up">
+                    <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li><i>01-April-2023 :</i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                 </ul>
+            </marquee>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4" data-aos="fade-up">EVENTS</h2>
+            <ul class="space-y-4" data-aos="fade-up">
+                <li class="flex space-x-4 items-center">
+                    <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="flex space-x-4 items-center">
+                    <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="flex space-x-4 items-center">
+                    <span class="bg-blue-500 text-white p-3 rounded-lg text-center">29 <br> April</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4" data-aos="fade-up">NOTICE BOARD</h2>
+            <ul class="space-y-3" data-aos="fade-up">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>            
+            </ul>
+        </div>
+    </div>
+</section>
+
+ <!-- Educational Levels -->
+ <section>
+    <div class="container mx-auto px-4 py-10" >
+        <h2 class="text-3xl font-bold text-blue-600 text-center mb-8" data-aos="fade-up">Our Educational Levels</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Pre-School Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <img src="images/pexels-thirdman-8926648.jpg" alt="Pre-School" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold">Pre-School</h3>
+                    <p class="text-gray-600 mt-2">A nurturing environment where little minds blossom with creativity and curiosity.</p>
+                </div>
             </div>
-            
-            <!-- Notice Board -->
-            <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4">NOTICE BOARD</h2>
-                <ul class="space-y-3 text-gray-700">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
+    
+            <!-- Primary School Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <img src="images/pexels-norma-mortenson-8457721.jpg" alt="Primary School" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold">Primary School</h3>
+                    <p class="text-gray-600 mt-2">Building a strong foundation for lifelong learning through engaging education.</p>
+                </div>
+            </div>
+    
+            <!-- High School Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <img src="images/istockphoto-1.jpg" alt="High School" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold">High School</h3>
+                    <p class="text-gray-600 mt-2">Preparing students for the future with advanced learning and critical thinking skills.</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Educational Levels -->
-    <section>
-        <div class="container mx-auto px-4 py-10" >
-            <h2 class="text-3xl font-bold text-center mb-8">Our Educational Levels</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Pre-School Card -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                    <img src="images/pexels-thirdman-8926648.jpg" alt="Pre-School" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold">Pre-School</h3>
-                        <p class="text-gray-600 mt-2">A nurturing environment where little minds blossom with creativity and curiosity.</p>
-                    </div>
-                </div>
-        
-                <!-- Primary School Card -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                    <img src="images/pexels-norma-mortenson-8457721.jpg" alt="Primary School" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold">Primary School</h3>
-                        <p class="text-gray-600 mt-2">Building a strong foundation for lifelong learning through engaging education.</p>
-                    </div>
-                </div>
-        
-                <!-- High School Card -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                    <img src="images/istockphoto-1.jpg" alt="High School" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold">High School</h3>
-                        <p class="text-gray-600 mt-2">Preparing students for the future with advanced learning and critical thinking skills.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-
- <!-- Programs Section -->
-<section id="programs" class="py-20 px-6">
+<!-- Programs Section -->
+<section id="programs" class="py-20 px-4 sm:px-6">
     <h2 class="text-4xl font-bold text-blue-600 text-center mb-8" data-aos="fade-up">Our Programs</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-        <!-- Left Side: Image -->
-        <div class="order-1 md:order-none" data-aos="fade-right">
+        <div class="order-1 md:order-none" data-aos="fade-up">
             <img src="images/pexels-max-fischer-5212336.jpg" alt="School Programs" class="w-full rounded-lg shadow-md">
         </div>
 
-        <!-- Right Side: Text -->
         <div>
-            <div class="mt-6 space-y-6" data-aos="fade-left">
+            <div class="mt-6 space-y-6" data-aos="fade-up">
                 <div class="bg-gray-100 p-4 rounded-lg shadow-md">
                     <h4 class="text-2xl font-semibold text-blue-500">Pre-School</h4>
                     <p class="text-gray-600 mt-2">Our early childhood education focuses on foundational literacy, numeracy, and social skills.</p>
@@ -172,35 +161,33 @@
     </div>
 </section>
 
+<!-- Contact Section -->
+<section class="py-10 px-4 sm:px-6">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-6" data-aos="fade-up">Contact Us</h2>
+    <div class="max-w-2xl mx-auto text-center" >      
+        <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up" >Contact:</p>
+        <p class="text-2xl font-semibold text-blue-600 flex items-center justify-center" data-aos="fade-up">
+            <i class="fa fa-volume-control-phone fa-bounce" aria-hidden="true"></i>
+            <a href="tel:+34977325620" class="hover:underline">+233 24 000 1022</a>
+        </p>
+  
+        <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up">General Info:</p>
+        <p class="text-lg text-blue-600 flex items-center justify-center" data-aos="fade-up">
+            <i class="fas fa-envelope mr-2 fa-beat"></i>
+            <a href="mailto:info@socrateseduca.org" class="hover:underline">info@princetoneduca.org</a>
+        </p>
+  
+        <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up">Admissions:</p>
+        <p class="text-lg text-blue-600 flex items-center justify-center" data-aos="fade-up">
+            <i class="fas fa-envelope mr-2 fa-beat"></i>
+            <a href="mailto:admissions@socrateseduca.org" class="hover:underline">admissions@princetoneduca.org</a>
+        </p>
+    </div>
+</section>
 
-  <!-- Contact Section -->
-  <section>
-      <div class="py-10 px-6 ">
-        <h2 class="text-3xl font-bold text-center text-blue-600 mb-6" data-aos="fade-up">Contact Us</h2>
-        <div class="max-w-2xl mx-auto text-center" >      
-            <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up" >Contact:</p>
-            <p class="text-2xl font-semibold text-blue-600 flex items-center justify-center" data-aos="fade-up">
-                <i class="fa fa-volume-control-phone fa-bounce" aria-hidden="true"></i>
-                <a href="tel:+34977325620" class="hover:underline">+34 977 325 620</a>
-            </p>
-      
-            <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up">General Info:</p>
-            <p class="text-lg text-blue-600 flex items-center justify-center" data-aos="fade-up">
-                <i class="fas fa-envelope mr-2 fa-beat"></i>
-                <a href="mailto:info@socrateseduca.org" class="hover:underline">info@princetoneduca.org</a>
-            </p>
-      
-            <p class="text-lg text-gray-700 font-semibold mt-4" data-aos="fade-up">Admissions:</p>
-            <p class="text-lg text-blue-600 flex items-center justify-center" data-aos="fade-up">
-                <i class="fas fa-envelope mr-2 fa-beat"></i>
-                <a href="mailto:admissions@socrateseduca.org" class="hover:underline">admissions@princetoneduca.org</a>
-            </p>
-        </div>
-      </div>
-  </section>
 <!-- Map Section -->
 <div class="bg-gray-100 py-10 px-6 mt-16">
-    <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Find Us</h2>
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-6" data-aos="fade-up">Find Us</h2>
     <div class="max-w-3xl mx-auto">
         <iframe 
             class="w-full h-80 rounded-lg shadow-md"
@@ -216,50 +203,48 @@
     </div>
 </div>
 
-
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10 mt-10">
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-6 text-center md:text-left">
-            <!-- School Logo and Name -->
-            <div>
-                <img src="images/school-logo(red).png" alt="School Logo" class="mx-auto md:mx-0 w-24 h-24 mb-4">
-                <h2 class="text-xl font-bold">Princeton International School</h2>
-                <p class="mt-2 text-gray-400">A place of excellence in education.</p>
-            </div>
-            
-            <!-- Quick Links -->
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#home" class="hover:text-white">Home</a></li>
-                    <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
-                    <li><a href="#" class="hover:text-white">About</a></li>
-                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
-                </ul>
-            </div>
-            
-            <!-- Social Media -->
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="images/facebook (1).png" class="w-10 h-10" alt="">
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="images/social.png" class="w-10 h-10" alt="">
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="images/twitter (1).png" class="w-10 h-10" alt="">
-                    </a>
-                </div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center md:text-left">
+        <!-- School Logo and Name -->
+        <div>
+            <img src="images/school-logo(red).png" alt="School Logo" class="mx-auto md:mx-0 w-24 h-24 mb-4">
+            <h2 class="text-xl font-bold">Princeton International School</h2>
+            <p class="mt-2 text-gray-400">A place of excellence in education.</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+            <ul class="space-y-2 text-gray-400">
+                <li><a href="#home" class="hover:text-white">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
+                <li><a href="#" class="hover:text-white">About</a></li>
+                <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Social Media -->
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
+            <div class="flex justify-center md:justify-start space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <img src="images/facebook (1).png" class="w-10 h-10" alt="">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <img src="images/social.png" class="w-10 h-10" alt="">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <img src="images/twitter (1).png" class="w-10 h-10" alt="">
+                </a>
             </div>
         </div>
-        <div class="text-center text-gray-500 text-sm mt-6 border-t border-gray-700 pt-4">
-            &copy; 2025 Princeton International School. All Rights Reserved.
-        </div>
-    </footer>
-    
+    </div>
+    <div class="text-center text-gray-500 text-sm mt-6 border-t border-gray-700 pt-4">
+        &copy; 2025 Princeton International School. All Rights Reserved.
+    </div>
+</footer>
+
     <!-- toggle -->
     <script src="js/toggle.js"></script>
     <!-- map -->
@@ -270,8 +255,6 @@
       AOS.init();
     </script>
 
-    
-    
+
 </body>
 </html>
-
